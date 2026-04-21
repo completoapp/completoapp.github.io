@@ -4,24 +4,123 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Completo Terms of Service</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: rgba(255, 255, 255, 0.92);
+      --surface-border: rgba(151, 171, 196, 0.24);
+      --text: #18212f;
+      --muted: #5d6a7f;
+      --accent: #2f80ed;
+      --shadow: 0 18px 48px rgba(38, 58, 91, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(47, 128, 237, 0.14), transparent 28%),
+        linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      line-height: 1.68;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 42px 0 56px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 36px;
+      backdrop-filter: blur(12px);
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 18px;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+    }
+
+    .updated {
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    p + p {
+      margin-top: 12px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        width: min(100% - 20px, 860px);
+        padding: 18px 0 28px;
+      }
+
+      .card {
+        padding: 24px 20px;
+        border-radius: 22px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Terms of Service</h1>
+  <main>
+    <section class="card">
+      <a class="back" href="/">← Back to Completo</a>
+      <h1>Terms of Service</h1>
+      <p class="updated">Last updated: April 2026</p>
 
-  <p>Last updated: April 2026</p>
+      <p>Completo is a task, reminder, and time tracking app.</p>
 
-  <p>Completo is a task, reminder, and time tracking app.</p>
+      <p>By using Completo, you agree to use the app responsibly and only for lawful purposes.</p>
 
-  <p>By using Completo, you agree to use the app responsibly and only for lawful purposes.</p>
+      <p>Completo may allow you to import events from Apple Calendar or Google Calendar, or push reminders you choose to external calendars. Calendar access is used only for user-requested calendar features.</p>
 
-  <p>Completo may allow you to import events from Apple Calendar or Google Calendar, or push reminders you choose to external calendars. Calendar access is used only for user-requested calendar features.</p>
+      <h2>Subscriptions</h2>
+      <p>Completo Pro subscriptions are managed through Apple. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Apple’s standard terms apply:
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>.
+      </p>
 
-  <p>Completo Pro subscriptions are managed through Apple. Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Apple’s standard terms apply:
-    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
-  </p>
+      <h2>Service Availability</h2>
+      <p>Completo is provided as-is. We do our best to keep the app reliable, but we do not guarantee uninterrupted or error-free operation.</p>
 
-  <p>Completo is provided as-is. We do our best to keep the app reliable, but we do not guarantee uninterrupted or error-free operation.</p>
-
-  <p>For questions, contact: completo.ios@gmail.com</p>
+      <h2>Contact</h2>
+      <p>For questions, contact: <a href="mailto:completo.ios@gmail.com">completo.ios@gmail.com</a></p>
+    </section>
+  </main>
 </body>
 </html>
